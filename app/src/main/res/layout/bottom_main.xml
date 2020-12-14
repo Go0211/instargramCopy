@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="55dp">
+
+            <ImageView
+                android:id="@+id/mainBottomHomeButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="#EF3939"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"/>
+            <ImageView
+                android:id="@+id/mainBottomSearchButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="#96E8EA"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"/>
+            <ImageView
+                android:id="@+id/mainBottomPostButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="#EF3939"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"/>
+            <ImageView
+                android:id="@+id/mainBottomShopButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="#96E8EA"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"/>
+            <ImageView
+                android:id="@+id/mainBottomMyInformationButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="#EF3939"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"/>
+
+</LinearLayout>

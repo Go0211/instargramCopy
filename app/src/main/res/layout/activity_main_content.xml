@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".main.MainContentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="625dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:background="#F8DDDD"
+                android:text="Instargram"
+                android:textSize="25dp" />
+
+            <ImageView
+                android:id="@+id/mainTopActivity"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginRight="10dp"
+                android:background="#DD9D9D" />
+
+            <ImageView
+                android:id="@+id/mainTopDirect"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:background="#986363" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#F9D939"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#7BE8DC">
+
+            <ImageView
+                android:id="@+id/mainMiddleImage"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+
+            <TextView
+                android:id="@+id/mainMiddleImageTotal"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="350dp"
+                android:layout_marginTop="20dp"
+                android:text="현재 / 총갯스" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/mainMiddleHeart"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:background="#EB6868" />
+
+            <ImageView
+                android:id="@+id/mainMiddleCommit"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:background="#17695F" />
+
+            <ImageView
+                android:id="@+id/mainMiddleDirect"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="70dp"
+                android:background="#EB6868" />
+
+            <TextView
+                android:id="@+id/null1"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="110dp"
+                android:background="#709D35" />
+
+            <ImageView
+                android:id="@+id/mainMiddleCollection"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#C174C8" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/mainMiddleHeartScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="좋아요갯수" />
+
+        <TextView
+            android:id="@+id/mainMiddleBulletin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="게시글" />
+
+        <TextView
+            android:id="@+id/mainMiddleCommitScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="댓글갯수" />
+
+        <TextView
+            android:id="@+id/mainMiddleInsertCommit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="댓글달기" />
+
+        <TextView
+            android:id="@+id/mainMiddleUpLoadTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="게시시간" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainBottom"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:background="#0D0D0D"
+        tools:ignore="ExtraText">
+    </LinearLayout>
+</LinearLayout>
