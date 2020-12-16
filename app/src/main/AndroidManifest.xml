@@ -9,9 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Instargram">
-        <activity android:name=".main.MainDirectActivity"></activity>
-        <activity android:name=".main.MainDoActivity" />
-        <activity android:name=".main.MainContentActivity">
+        <activity android:name=".main_bottom.MyInformationActivity"></activity>
+        <activity android:name=".main_bottom.ShopActivity" />
+        <activity android:name=".main_bottom.PostActivity" />
+        <activity android:name=".main_bottom.SearchActivity" />
+        <activity android:name=".main_middle.MainDirectActivity" />
+        <activity android:name=".main_middle.MainDoActivity" />
+        <activity android:name=".main_middle.MainContentActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,11 +23,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
     </application>
 

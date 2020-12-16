@@ -1,26 +1,29 @@
-package com.example.android.instargram.main
+package com.example.android.instargram.main_middle
 
 import android.content.Intent
-import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Toast
-import androidx.core.app.NotificationCompat
-import androidx.core.app.NotificationManagerCompat
 import com.example.android.instargram.R
-import kotlinx.android.synthetic.main.activity_main_content.*
+import com.example.android.instargram.main_bottom.MainBottom
 
 class MainContentActivity : AppCompatActivity() {
+    val mainBottom = MainBottom()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_content)
 
+        val mainBottomHomeButton =
+
+
         supportFragmentManager
             .beginTransaction()
-            .replace(R.id.mainBottom, MainBottom())
+            .replace(R.id.mainBottom,
+                MainBottom()
+            )
             .commit()
     }
     //메뉴가 무효화되지 않으면 호출x

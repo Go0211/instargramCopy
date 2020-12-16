@@ -1,4 +1,4 @@
-package com.example.android.instargram.main
+package com.example.android.instargram.main_middle
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
