@@ -1,9 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".main_bottom.MyInformationActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!--    1. 모든 string값 value에 넣기
+            2. ViewPager + fragment 사용-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/myImage"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_launcher_foreground"/>
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="26dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/postCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textSize="20dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/myInformationPost"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:text="게시물"
+                    android:textSize="17dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="26dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/followerCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textSize="20dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/myInformationFollower"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:text="팔로워"
+                    android:textSize="17dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="26dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/followCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textSize="20dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/myInformationFollow"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:text="팔로우"
+                    android:textSize="17dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/myName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mr, Go"/>
+
+        <Button
+            android:id="@+id/profileEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="프로필 편집"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:text="스토리 하이라이트 / 다른 작업 필요"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:text="ViewPager 구현 필요
+            / 프로필 + 내가 나온 사진 및 동영상
+            / fragment사용해야 할 듯">
+
+        </TextView>
+
+    </LinearLayout>
+</LinearLayout>

@@ -13,12 +13,14 @@
         android:orientation="horizontal">
 
         <EditText
+            android:id="@+id/searchSearch"
             android:layout_width="350dp"
             android:layout_height="50dp"
             android:text="안녕하세요"
             android:background="#EB3434"
             android:layout_marginRight="5dp"/>
         <ImageView
+            android:id="@+id/searchQRCode"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:src="@drawable/ic_launcher_foreground"/>
@@ -29,22 +31,26 @@
         android:layout_height="wrap_content">
 
         <Button
+            android:id="@+id/searchButton1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <Button
+            android:id="@+id/searchButton2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <Button
+            android:id="@+id/searchButton3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <Button
+            android:id="@+id/searchButton4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="450dp"
+        android:layout_height="500dp"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -52,20 +58,30 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:layout_weight="1">
+
             <ImageView
+                android:id="@+id/searchImage1"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:background="#64B9C6"
                 android:layout_weight="1"/>
             <ImageView
+                android:id="@+id/searchImage2"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:background="#C99494"
                 android:layout_weight="1"/>
             <ImageView
+                android:id="@+id/searchImage3"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:background="#FFFFFF"
+                android:layout_weight="1"/>
+            <ImageView
+                android:id="@+id/searchImage4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#64B9C6"
                 android:layout_weight="1"/>
         </LinearLayout>
 
@@ -74,12 +90,15 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:layout_weight="2">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:orientation="horizontal"
                 android:layout_weight="2">
+
                 <ImageView
+                    android:id="@+id/searchBigImage1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="#B54444"/>
@@ -92,14 +111,36 @@
                 android:layout_weight="1">
 
                 <ImageView
+                    android:id="@+id/searchImage5"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:background="#C99494"
                     android:layout_weight="1"/>
                 <ImageView
+                    android:id="@+id/searchImage6"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:background="#FFFFFF"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/searchImage7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#DA3A3A"
+                    android:layout_weight="1"/>
+                <ImageView
+                    android:id="@+id/searchImage8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#000000"
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
@@ -109,21 +150,26 @@
         android:layout_width="match_parent"
         android:layout_height="450dp"
         android:orientation="horizontal">
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:layout_weight="2">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:orientation="horizontal"
                 android:layout_weight="2">
+
                 <ImageView
+                    android:id="@+id/searchBigImage2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="#B54444"/>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -131,14 +177,36 @@
                 android:layout_weight="1">
 
                 <ImageView
+                    android:id="@+id/searchImage13"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:background="#C99494"
                     android:layout_weight="1"/>
                 <ImageView
+                    android:id="@+id/searchImage14"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:background="#FFFFFF"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/searchImage15"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#DA3A3A"
+                    android:layout_weight="1"/>
+                <ImageView
+                    android:id="@+id/searchImage16"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#000000"
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
@@ -149,19 +217,28 @@
             android:orientation="vertical"
             android:layout_weight="1">
             <ImageView
+                android:id="@+id/searchImage9"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:background="#64B9C6"
                 android:layout_weight="1"/>
             <ImageView
+                android:id="@+id/searchImage10"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:background="#C99494"
                 android:layout_weight="1"/>
             <ImageView
+                android:id="@+id/searchImage11"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:background="#FFFFFF"
+                android:layout_weight="1"/>
+            <ImageView
+                android:id="@+id/searchImage12"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#64B9C6"
                 android:layout_weight="1"/>
         </LinearLayout>
     </LinearLayout>

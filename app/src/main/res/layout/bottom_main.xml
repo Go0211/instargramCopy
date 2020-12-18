@@ -1,45 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="55dp">
+    android:layout_height="55dp"
+    android:orientation="horizontal">
 
-            <ImageView
-                android:id="@+id/mainBottomHomeButton"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:background="#EF3939"
-                android:layout_gravity="center"
-                android:layout_marginLeft="10dp"/>
-            <ImageView
-                android:id="@+id/mainBottomSearchButton"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:background="#96E8EA"
-                android:layout_gravity="center"
-                android:layout_marginLeft="30dp"/>
-            <ImageView
-                android:id="@+id/mainBottomPostButton"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:background="#EF3939"
-                android:layout_gravity="center"
-                android:layout_marginLeft="30dp"/>
-            <ImageView
-                android:id="@+id/mainBottomShopButton"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:background="#96E8EA"
-                android:layout_gravity="center"
-                android:layout_marginLeft="30dp"/>
-            <ImageView
-                android:id="@+id/mainBottomMyInformationButton"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:background="#EF3939"
-                android:layout_gravity="center"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="10dp"/>
+<!--    1. 아이콘 추가-->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/mainBottomHomeButton"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="#EF3939" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/mainBottomSearchButton"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="#96E8EA" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/mainBottomPostButton"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="#EF3939" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/mainBottomShopButton"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="#96E8EA" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/mainBottomMyInformationButton"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="#EF3939" />
+    </LinearLayout>
 
 </LinearLayout>

@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.bottom_main.*
 class MainBottom : Fragment() {
     override fun onAttach(context: Context) {
         super.onAttach(context)
-        Log.d("fragment", "onAttach")
+        Log.d("bottomFragment", "onAttach")
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -50,6 +50,8 @@ class MainBottom : Fragment() {
     override fun onResume() {
         super.onResume()
         Log.d("bottomFragment", "onResume")
+
+        //1. 현재 뷰 확인 후 조건문으로 동일 뷰 보여지지 않게 하기
 
         //메인버튼 클릭 시
         mainBottomHomeButton.setOnClickListener {

@@ -12,6 +12,7 @@
         android:orientation="vertical">
 
         <EditText
+            android:id="@+id/shopSearch"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:text="안녕하세요"
@@ -21,18 +22,23 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
             <Button
+                android:id="@+id/shopButton1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <Button
+                android:id="@+id/shopButton2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <Button
+                android:id="@+id/shopButton3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <Button
+                android:id="@+id/shopButton4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
         </LinearLayout>
@@ -56,10 +62,12 @@
                     android:layout_height="200dp">
 
                     <ImageView
+                        android:id="@+id/shopImage1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="#74DCD0"/>
                     <TextView
+                        android:id="@+id/shopTitle1"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginTop="5dp"
@@ -67,6 +75,7 @@
                 </RelativeLayout>
 
                 <TextView
+                    android:id="@+id/shopExplanation1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="안녕하세요"/>
@@ -87,10 +96,13 @@
                     android:layout_height="200dp">
 
                     <ImageView
+                        android:id="@+id/shopImage2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="#74DCD0"/>
+                        android:background="#74DCD0" />
+
                     <TextView
+                        android:id="@+id/shopTitle2"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginTop="5dp"
@@ -98,11 +110,49 @@
                 </RelativeLayout>
 
                 <TextView
+                    android:id="@+id/shopExplanation2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="안녕하세요"/>
             </LinearLayout>
+        </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#EAB9B9"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+                <ImageView
+                    android:id="@+id/shopImage3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#74DCD0"/>
+                <TextView
+                    android:id="@+id/shopTitle3"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:text="안녕하세요"/>
+                <Button
+                    android:id="@+id/shopCollectionButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="컬렉션"
+                    android:layout_toRightOf="@id/shopTitle3"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="안녕하세요"
+                    android:layout_marginTop="240dp"/>
+            </RelativeLayout>
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
