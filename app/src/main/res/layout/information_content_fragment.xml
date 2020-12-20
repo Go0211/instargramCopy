@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".main_bottom.MyInformationActivity">
+    tools:context=".information.MyInformationContentFragment">
 
     <!--    1. 모든 string값 value에 넣기
             2. ViewPager + fragment 사용-->

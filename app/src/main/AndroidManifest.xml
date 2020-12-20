@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.android.instargram">
 
     <application
@@ -9,18 +10,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Instargram">
-        <activity android:name=".main_bottom.MyInformationActivity"></activity>
-        <activity android:name=".main_bottom.ShopActivity" />
-        <activity android:name=".main_bottom.PostActivity" />
-        <activity android:name=".main_bottom.SearchActivity" />
-        <activity android:name=".main_middle.MainDirectActivity" />
-        <activity android:name=".main_middle.MainDoActivity" />
-        <activity android:name=".main_middle.MainContentActivity">
+        <activity android:name=".main.MainFrameActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".post.PostFragmentLive" />
+        <activity android:name=".post.PostFragmentStory" />
+        <activity android:name=".post.PostFragmentGallery"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".information.MyInformationContentFragment" />
+        <activity android:name=".shop.ShopContentFragment" />
+        <activity android:name=".post.PostActivity" />
+        <activity android:name=".search.SearchContentFragment" />
+        <activity android:name=".main.MainDirectActivity" />
+        <activity android:name=".main.MainDoActivity" />
+        <activity android:name=".main.MainContentFragment">
         </activity>
         <activity android:name=".MainActivity">
 

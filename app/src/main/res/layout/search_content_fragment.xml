@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".main_bottom.SearchActivity">
+    tools:context=".search.SearchContentFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -51,11 +51,12 @@
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/searchSwipeRefreshLayout"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="570dp">
 
-        <androidx.recyclerview.widget.RecyclerView
+        <LinearLayout
             android:id="@+id/searchRecyclerView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 </LinearLayout>

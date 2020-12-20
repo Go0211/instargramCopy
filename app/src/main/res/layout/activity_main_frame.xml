@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".main.MainFrameActivity">
+
+    <LinearLayout
+        android:id="@+id/insertContent"
+        android:layout_width="match_parent"
+        android:layout_height="625dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainBottom"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/mainBottomHomeButton"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="#EF3939" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/mainBottomSearchButton"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="#96E8EA" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/mainBottomPostButton"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="#EF3939" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/mainBottomShopButton"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="#96E8EA" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/mainBottomMyInformationButton"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="#EF3939" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

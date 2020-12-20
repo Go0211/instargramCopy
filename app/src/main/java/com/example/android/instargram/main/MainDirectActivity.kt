@@ -1,8 +1,7 @@
-package com.example.android.instargram.main_middle
+package com.example.android.instargram.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
