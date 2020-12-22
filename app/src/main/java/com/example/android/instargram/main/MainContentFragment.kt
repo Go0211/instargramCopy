@@ -2,13 +2,17 @@ package com.example.android.instargram.main
 
 import android.annotation.SuppressLint
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.*
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentStatePagerAdapter
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import androidx.viewpager2.adapter.FragmentStateAdapter
+import androidx.viewpager2.widget.ViewPager2
 import com.example.android.instargram.R
 import kotlinx.android.synthetic.main.main_content_fragment.*
 
@@ -16,6 +20,9 @@ class MainContentFragment : Fragment() {
     private lateinit var storyRecyclerView: RecyclerView
     private lateinit var storyViewAdapter: RecyclerView.Adapter<*>
     private lateinit var storyViewManager: RecyclerView.LayoutManager
+
+    private lateinit var imageViewPager2Adapter: ImageViewPager2Adapter
+    private lateinit var viewPager: ViewPager2
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
@@ -50,13 +57,13 @@ class MainContentFragment : Fragment() {
         storyViewAdapter = StoryAdapter(story)
 
         storyRecyclerView = view.findViewById<RecyclerView>(R.id.storyRecyclerView).apply {
-            // use this setting to improve performance if you know that changes
-            // in content do not change the layout size of the RecyclerView
-            setHasFixedSize(true)
-
             layoutManager = storyViewManager
             adapter = storyViewAdapter
         }
+
+        imageViewPager2Adapter = ImageViewPager2Adapter(this)
+        viewPager = view.findViewById(R.id.mainMiddleImagePager)
+        viewPager.adapter = imageViewPager2Adapter
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
@@ -69,7 +76,6 @@ class MainContentFragment : Fragment() {
         Log.d("DefaultPage", "onStart")
     }
 
-    @SuppressLint("ResourceAsColor")
     override fun onResume() {
         super.onResume()
         Log.d("DefaultPage", "onResume")
@@ -77,10 +83,12 @@ class MainContentFragment : Fragment() {
         var heartCount: Int = 0
         var collectionCount: Int = 0
 
+        //새로고침
         mainContentSwipeRefreshLayout.setOnRefreshListener {
             mainContentSwipeRefreshLayout.isRefreshing = false
         }
 
+        //하트버튼
         mainMiddleHeart.setOnClickListener {
             if (heartCount == 0) {
                 mainMiddleHeart.setBackgroundResource(R.color.heartClick)
@@ -94,6 +102,13 @@ class MainContentFragment : Fragment() {
             }
         }
 
+        //말풍선버튼
+        mainMiddleCommit.setOnClickListener {
+            val intent = Intent(activity, MainContentCommitActivity::class.java)
+            startActivity(intent)
+        }
+
+        //컬렉션버튼
         mainMiddleCollection.setOnClickListener {
             if (collectionCount == 0) {
                 mainMiddleCollection.setBackgroundResource(R.color.collectionClick)
@@ -129,6 +144,41 @@ class MainContentFragment : Fragment() {
     }
 }
 
+//ViewPager2용 어댑터
+class ImageViewPager2Adapter(fragment: Fragment): FragmentStateAdapter(fragment) {
+    override fun getItemCount(): Int = 100
+
+    override fun createFragment(position: Int): Fragment {
+        val fragment = ImageViewPagerFragment()
+        fragment.arguments = Bundle().apply {
+            putInt(ARG_OBJECT, position+1)
+        }
+
+        return fragment
+    }
+}
+
+private const val ARG_OBJECT = "object"
+
+//ViewPager2에 붙일 Fragment
+class ImageViewPagerFragment: Fragment() {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        return inflater.inflate(R.layout.image_view, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        arguments?.takeIf { it.containsKey(ARG_OBJECT) }?.apply {
+            val textView: TextView = view.findViewById(R.id.ImagePagerFragment)
+            textView.text = getInt(ARG_OBJECT).toString()
+        }
+    }
+}
+
+//RecyclerView용 어댑터
 class StoryAdapter(
     val story: ArrayList<Story>
 ) : RecyclerView.Adapter<StoryAdapter.StoryViewHolder>() {
@@ -151,7 +201,7 @@ class StoryAdapter(
     }
 }
 
-
+//RecyclerView용 데이터 클래스
 data class Story (
     val storyImage: String
 )

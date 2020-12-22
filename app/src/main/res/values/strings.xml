@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Instargram</string>
-
+<!-- 액션바-->
     <string name="instargram">instargram</string>
+    
+<!--    mainContentFragment-->
+    <string name="heartScoreTitle">좋아요</string>
 </resources>
