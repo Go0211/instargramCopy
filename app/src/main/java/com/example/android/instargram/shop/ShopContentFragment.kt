@@ -7,10 +7,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.android.instargram.R
 import kotlinx.android.synthetic.main.shop_content_fragment.*
 
 class ShopContentFragment : Fragment() {
+    private lateinit var shopRecyclerView: RecyclerView
+    private lateinit var shopRecyclerViewAdapter: ShopRecyclerViewAdapter
+    private lateinit var shopLayoutManager: LinearLayoutManager
+
     override fun onAttach(context: Context) {
         super.onAttach(context)
         Log.d("ShopPage", "onAttach")
@@ -33,6 +39,22 @@ class ShopContentFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         Log.d("ShopPage", "onViewCreated")
+
+        val countArrayList = ArrayList<ShopFrame>()
+        for (num in 0..100) {
+            if (num % 2 != 0)
+                countArrayList.add(num, ShopFrame(num))
+            else
+                countArrayList.add(num, ShopFrame(num))
+        }
+
+        shopRecyclerViewAdapter = ShopRecyclerViewAdapter(countArrayList)
+        shopLayoutManager = LinearLayoutManager(activity)
+
+        shopRecyclerView = view.findViewById<RecyclerView>(R.id.shopRecyclerView).apply{
+            adapter = shopRecyclerViewAdapter
+            layoutManager = shopLayoutManager
+        }
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
@@ -53,17 +75,6 @@ class ShopContentFragment : Fragment() {
         shopSwipeRefreshLayout.setOnRefreshListener {
             shopSwipeRefreshLayout.isRefreshing = false
         }
-
-//        val countArrayList = ArrayList<SearchFrame>()
-//        for (num in 0..100) {
-//            if (num % 2 != 0)
-//                countArrayList.add(num, SearchFrame(num))
-//            else
-//                countArrayList.add(num, SearchFrame(num))
-//        }
-//
-//        searchRecyclerView.adapter = Adapter(countArrayList, LayoutInflater.from(activity))
-//        searchRecyclerView.layoutManager = LinearLayoutManager(activity)
     }
 
     override fun onPause() {
@@ -86,6 +97,32 @@ class ShopContentFragment : Fragment() {
         Log.d("ShopPage", "onDetach")
     }
 }
+
+class ShopRecyclerViewAdapter(
+    val countArrayList: ArrayList<ShopFrame>
+): RecyclerView.Adapter<ShopRecyclerViewAdapter.ShopViewHolder>() {
+    class ShopViewHolder(view: View): RecyclerView.ViewHolder(view) {
+
+    }
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ShopViewHolder {
+        val view = LayoutInflater.from(parent.context)
+            .inflate(R.layout.shop_view, parent, false)
+        return ShopViewHolder(view)
+    }
+
+    override fun getItemCount(): Int {
+        return countArrayList.size
+    }
+
+    override fun onBindViewHolder(holder: ShopViewHolder, position: Int) {
+
+    }
+}
+
+data class ShopFrame(
+    val shop: Int
+)
 
 //1. 버튼들을 스크롤로 볼 수 있게 => Recycler + 스크롤바 정도
 //2. 이미지 길게 클릭 시, 짧게 클릭 시를 구별해서 구현

@@ -7,5 +7,6 @@
         android:id="@+id/ImagePagerFragment"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:orientation="horizontal"/>
+        android:orientation="horizontal"
+        android:textSize="50dp"/>
 </LinearLayout>

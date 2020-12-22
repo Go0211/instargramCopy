@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="#EAB9B9"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <ImageView
+                        android:id="@+id/shopImage1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#74DCD0" />
+
+                    <TextView
+                        android:id="@+id/shopTitle1"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:text="안녕하세요" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/shopExplanation1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="안녕하세요" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="#EAB9B9"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <ImageView
+                        android:id="@+id/shopImage2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#74DCD0" />
+
+                    <TextView
+                        android:id="@+id/shopTitle2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:text="안녕하세요" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/shopExplanation2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="안녕하세요" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="#EAB9B9"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <ImageView
+                        android:id="@+id/shopImage3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#74DCD0" />
+
+                    <TextView
+                        android:id="@+id/shopTitle3"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:text="안녕하세요" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/shopExplanation3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="안녕하세요" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="#EAB9B9"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <ImageView
+                        android:id="@+id/shopImage4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#74DCD0" />
+
+                    <TextView
+                        android:id="@+id/shopTitle4"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:text="안녕하세요" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/shopExplanation4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="안녕하세요" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="#EAB9B9"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <ImageView
+                        android:id="@+id/shopImage5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#74DCD0" />
+
+                    <TextView
+                        android:id="@+id/shopTitle5"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:text="안녕하세요" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/shopExplanation5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="안녕하세요" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="#EAB9B9"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <ImageView
+                        android:id="@+id/shopImage6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#74DCD0" />
+
+                    <TextView
+                        android:id="@+id/shopTitle6"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:text="안녕하세요" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/shopExplanation6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="안녕하세요" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="#EAB9B9"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <ImageView
+                        android:id="@+id/shopImage7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#74DCD0" />
+
+                    <TextView
+                        android:id="@+id/shopTitle7"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:text="안녕하세요" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/shopExplanation7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="안녕하세요" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="#EAB9B9"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <ImageView
+                        android:id="@+id/shopImage8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#74DCD0" />
+
+                    <TextView
+                        android:id="@+id/shopTitle8"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:text="안녕하세요" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/shopExplanation8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="안녕하세요" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="245dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="245dp">
+
+                <ImageView
+                    android:id="@+id/shopBigImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#74DCD0" />
+
+                <TextView
+                    android:id="@+id/shopBigTitle"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:text="안녕하세요" />
+
+                <Button
+                    android:id="@+id/shopCollectionButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/shopBigTitle"
+                    android:text="컬렉션" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="180dp"
+                    android:text="안녕하세요" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

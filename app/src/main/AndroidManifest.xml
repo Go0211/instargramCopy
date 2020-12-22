@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Instargram">
-        <activity android:name=".main.MainContentCommitActivity"></activity>
+        <activity android:name=".Test"></activity>
+        <activity android:name=".main.MainContentCommitActivity" />
         <activity android:name=".main.MainFrameActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,7 +30,7 @@
         <activity android:name=".search.SearchContentFragment" />
         <activity android:name=".main.MainDirectActivity" />
         <activity android:name=".main.MainDoActivity" />
-        <activity android:name=".main.MainContentFragment"></activity>
+        <activity android:name=".main.MainContentFragment" />
         <activity android:name=".MainActivity">
 
             <!-- <intent-filter> -->
