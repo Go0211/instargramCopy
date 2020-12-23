@@ -3,19 +3,23 @@ package com.example.android.instargram.search
 import android.content.Context
 import android.os.Bundle
 import android.util.Log
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
+import androidx.core.view.GestureDetectorCompat
+import androidx.core.view.MotionEventCompat
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.android.instargram.R
+import com.example.android.instargram.main.MainFrameActivity
 import kotlinx.android.synthetic.main.search_content_fragment.*
 
 class SearchContentFragment : Fragment() {
     private lateinit var searchRecyclerView: RecyclerView
     private lateinit var searchRecyclerViewAdapter: SearchRecyclerViewAdapter
     private lateinit var searchLayoutManager: LinearLayoutManager
+
+    private lateinit var mDetector: GestureDetectorCompat
+
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
@@ -53,6 +57,25 @@ class SearchContentFragment : Fragment() {
         searchRecyclerView = view.findViewById<RecyclerView>(R.id.searchRecyclerView).apply {
             layoutManager = searchLayoutManager
             adapter = searchRecyclerViewAdapter
+        }
+
+        mDetector = GestureDetectorCompat(activity, MyGestureListener())
+    }
+
+    private class MyGestureListener : GestureDetector.SimpleOnGestureListener() {
+        override fun onDown(event: MotionEvent): Boolean {
+            Log.d("test", "onDown: $event")
+            return true
+        }
+
+        override fun onFling(
+            event1: MotionEvent,
+            event2: MotionEvent,
+            velocityX: Float,
+            velocityY: Float
+        ): Boolean {
+            Log.d("test", "onFling: $event1 $event2")
+            return true
         }
     }
 

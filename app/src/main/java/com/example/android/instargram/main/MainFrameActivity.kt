@@ -4,23 +4,28 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.GestureDetector
 import android.view.Menu
 import android.view.MenuItem
+import android.view.MotionEvent
+import androidx.core.view.GestureDetectorCompat
 import com.example.android.instargram.R
 import com.example.android.instargram.information.MyInformationContentFragment
 import com.example.android.instargram.post.PostActivity
 import com.example.android.instargram.search.SearchContentFragment
 import com.example.android.instargram.shop.ShopContentFragment
 import kotlinx.android.synthetic.main.activity_main_frame.*
+import kotlinx.android.synthetic.main.search_view.*
 
-class MainFrameActivity : AppCompatActivity() {
+class MainFrameActivity : AppCompatActivity(){
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_frame)
 
         Log.d("ClickBottom", "onResume")
 
-
+        //기본 메인 띄우고 시작
         supportFragmentManager
             .beginTransaction()
             .replace(
@@ -29,7 +34,7 @@ class MainFrameActivity : AppCompatActivity() {
             )
             .commit()
 
-        //1. 현재 뷰 확인 후 조건문으로 동일 뷰 보여지지 않게 하기
+        //현재 뷰 확인 후 조건문으로 동일 뷰 보여지지 않게 하기위한 변수
         var checkNum = 1
 
         //메인버튼 클릭 시
